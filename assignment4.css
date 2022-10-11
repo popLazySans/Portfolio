@@ -1,0 +1,186 @@
+h1
+{
+    color: white;
+text-align: center;
+font-size: 72px;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.grid-container > div{
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    background-color:tan;
+}
+#header{
+    grid-column: 1 / span 3;
+}
+
+#menu{
+    grid-column: 1 / span 1;
+}
+
+#main{
+    grid-column: 2 / span 1;
+}
+#right{
+    grid-column: 3 / span 1;
+}
+
+#footer{
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto 60%;
+        grid-template-rows: auto auto auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 2;
+        grid-row: 1/ span 1;
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span1;
+    }
+    #main{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    #right{
+        grid-column: 2 / span 1;
+        grid-row: 3 /span 1;
+    }
+    #footer{
+        grid-column: 1 / span 2;
+        grid-row: 5/span 1;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    #header h1{
+        font-size: 48px;
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+    }
+    
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+    }
+}
+
+body
+{
+background-image:url(https://img.freepik.com/free-vector/blackboard-food-background_23-2148061712.jpg?w=2000) ;
+background-size: 100%;
+}
+
+h2
+{
+font-size: 100%;
+}
+h3
+{
+    font-size: 20px;
+text-align: center;
+}
+/*.board
+{
+    margin-top: 10px;
+margin-left: 200px;
+margin-right: 200px;    
+border: 3px solid orange;
+background-color: white;
+}*/
+.whiteChar
+{
+color: white;
+}
+.blackChar
+{
+color: black;
+}
+.h2box
+{
+
+
+    text-align: center;
+     width: 20%;    
+    border: 3px solid tan;
+    background-color: brown;
+}
+hr
+{
+    margin-left: 200px;
+    margin-right: 200px;     
+margin-block: auto;    
+background-color: darkslategrey;
+height: 15px
+;
+}
+.FullPic
+{
+width: 50%;
+height: 50%;
+
+}
+.middle
+{
+    text-align: center;
+    justify-content: middle;
+    vertical-align: middle;
+}
+.Pic{
+    width: 30%;
+    height: 30%;
+}
+.hundreadPic
+{
+width: 100%;
+height: 100%;
+}
+.flex_container
+{
+    margin-top: 10px;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+.flex_container>div
+{
+width: 30%;
+height: 30%;
+margin-bottom: 10px;
+}
+p{
+ font-size: 18px;
+ text-align: left;   
+}
